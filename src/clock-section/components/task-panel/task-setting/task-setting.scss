@@ -1,0 +1,23 @@
+.task-panel-setting {
+  width: 200px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+  border-radius: 10px;
+  padding: 10px;
+
+  :hover {
+    background-color: rgb(226, 225, 225);
+  }
+
+  .setting-item {
+    padding: 10px;
+    cursor: pointer;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}

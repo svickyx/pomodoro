@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./app.scss";
 
-function App() {
+import ClockHeader from "./header/ClockHeader";
+import ClockSection from "./clock-section/ClockSection";
+import DocumentPage from "./document-page/DocumentPage";
+import Footer from "./footer/Footer";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ClockHeader />
+      <ClockSection />
+      <DocumentPage />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
